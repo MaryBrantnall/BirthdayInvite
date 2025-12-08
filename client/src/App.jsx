@@ -3,8 +3,6 @@ import BirthdayBanner from './BirthdayBanner.jsx';
 import Rats from './Rats.jsx';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import dotenv from 'dotenv';
-dotenv.config();
 
 
 const PasswordPage = ({ onSubmit }) => {
@@ -51,7 +49,7 @@ const App = () => {
 
     try {
 
-      const response = await axios.post(`${process.env.SERVER_URI}/validate-password`, { submittedPassword: password });
+      const response = await axios.post(`${meta.env.VITE_API_URL.SERVER_URI}/validate-password`, { submittedPassword: password });
 
       if (response.status === 200) {
         setIsAuthenticated(true);

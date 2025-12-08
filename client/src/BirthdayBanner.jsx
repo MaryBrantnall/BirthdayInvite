@@ -1,8 +1,6 @@
 import './BirthdayBanner.css'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
     const [rsvpData, setRsvpData] = useState({
@@ -22,7 +20,7 @@ const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
     useEffect(() => {
         const fetchRsvps = async () => {
             try {
-                const response = await axios.get(`${process.env.SERVER_URI}/rsvps`);
+                const response = await axios.get(`${meta.env.VITE_API_URL.SERVER_URI}/rsvps`);
                 const rsvps = response.data;
                 
                 
