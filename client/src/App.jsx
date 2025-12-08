@@ -3,7 +3,6 @@ import BirthdayBanner from './BirthdayBanner.jsx';
 import Rats from './Rats.jsx';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import meta from 'vite-plugin-meta-env/client';
 
 
 const PasswordPage = ({ onSubmit }) => {
