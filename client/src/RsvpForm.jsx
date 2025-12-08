@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import axios from 'axios';
 import './RsvpForm.css';
-import meta from 'vite-plugin-meta-env/client';
+
 
 
 const RsvpForm = ({ sharedValue }) => {
@@ -35,7 +35,7 @@ const RsvpForm = ({ sharedValue }) => {
         setError('');
 
         try {
-            await axios.post(`${meta.env.VITE_API_URL.SERVER_URI}/rsvp`, formData);
+            await axios.post(`${import.meta.env.VITE_API_URL.SERVER_URI}/rsvp`, formData);
             setMessage('RSVP submitted successfully!');
             setFormData({
                 name: '',
