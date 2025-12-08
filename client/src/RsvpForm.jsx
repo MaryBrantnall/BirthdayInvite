@@ -36,7 +36,7 @@ const RsvpForm = ({ sharedValue }) => {
         setError('');
 
         try {
-            await axios.post(`http://localhost:3000/rsvp`, formData);
+            await axios.post(`${process.env.SERVER_URI}/rsvp`, formData);
             setMessage('RSVP submitted successfully!');
             setFormData({
                 name: '',

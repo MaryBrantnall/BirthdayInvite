@@ -1,6 +1,8 @@
 import './BirthdayBanner.css'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
     const [rsvpData, setRsvpData] = useState({
@@ -15,22 +17,12 @@ const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
         foodOption: ''
     });
 
-    // const [foodOptions, setFoodOptions] = useState({
-    //     appetizer: 3,
-    //     mainDish: 3,
-    //     sideDish: 3,
-    //     desserts: 2,
-    //     snacks: 2,
-    //     bread: 1,
-    //     other: 0
-    // });
-
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchRsvps = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/rsvps');
+                const response = await axios.get(`${process.env.SERVER_URI}/rsvps`);
                 const rsvps = response.data;
                 
                 
@@ -73,7 +65,7 @@ const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
                             break;
                     }
                 });
-                
+
                 updateSharedValue(updatedFoodOptions);
 
             } catch (error) {
