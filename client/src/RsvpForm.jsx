@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import axios from 'axios';
 import './RsvpForm.css';
+import meta from 'vite-plugin-meta-env/client';
 
 
 const RsvpForm = ({ sharedValue }) => {

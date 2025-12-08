@@ -1,6 +1,7 @@
 import './BirthdayBanner.css'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import meta from 'vite-plugin-meta-env/client';
 
 const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
     const [rsvpData, setRsvpData] = useState({
