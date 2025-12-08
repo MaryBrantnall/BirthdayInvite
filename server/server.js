@@ -1,10 +1,7 @@
 const express = require('express');
 const app = express();
 
-
-const __dirname = path.resolve();
-
-app.use(express.static(path.join(__dirname, 'client', 'dist')));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
 // SPA fallback:
 app.get('*', (req, res) => {
