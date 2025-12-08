@@ -21,7 +21,7 @@ const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
     useEffect(() => {
         const fetchRsvps = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_API_URL.SERVER_URI}/rsvps`);
+                const response = await axios.get(`${import.meta.env.VITE_SERVER_URI}/rsvps`);
                 const rsvps = response.data;
                 
                 
