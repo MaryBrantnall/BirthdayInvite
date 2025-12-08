@@ -5,7 +5,7 @@ require('dotenv').config();
 const Rsvp = require('./models/Rsvp');
 const validateRsvp = require('./middleware/validateMiddleware')
 const cors = require('cors');
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 app.use(cors());
 
@@ -69,7 +69,7 @@ app.get('/rsvps', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+    console.log(`Server is listening on port ${port}`);
 });
 
 
