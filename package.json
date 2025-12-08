@@ -1,0 +1,15 @@
+{
+  "name": "birthdayinvite",
+  "version": "1.0.0",
+  "description": "Just a small fun project for an upcoming birthday I'm hosting along with a piece to present in my full stack portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "start-server": "cd server && node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

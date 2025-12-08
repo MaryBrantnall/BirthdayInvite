@@ -1,5 +1,17 @@
 const express = require('express');
 const app = express();
+
+
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
+
+// SPA fallback:
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+});
+
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 const Rsvp = require('./models/Rsvp');
