@@ -5,7 +5,7 @@ require('dotenv').config();
 const Rsvp = require('./models/Rsvp');
 const validateRsvp = require('./middleware/validateMiddleware')
 const cors = require('cors');
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 
