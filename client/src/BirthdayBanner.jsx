@@ -94,7 +94,7 @@ const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
                     <li><strong>Date:</strong> January 10th, 2026</li>
                     <li><strong>Time:</strong> 1:00 PM - 7:00 PM (The venue will be rented out between 12pm and 7:30pm, but we will be going downtown for drinks around 8:30pm afterwards as well!)</li>
                     <li><strong>Location:</strong> Local Council of Women Halifax, 989 Young Avenue, Halifax NS</li>
-                    <li><strong>Dress Code:</strong> Fancy CANADIAN Bird Attire! Anywhere from business casual to formal! Wearing a full on costume with wings and a beak is encouraged, but simply wear the colours of your chosen bird as a fancy formal outfit is also great; go all out and have fun! (if you need inspiration for your Canadian bird of choice, check out https://ebird.org/region/CA for inspiration!)</li>
+                    <li><strong>Dress Code:</strong> Fancy CANADIAN Bird Attire! Anywhere from business casual to formal! Wearing a full on costume with wings and a beak is encouraged, but simply wearing the colours of your chosen bird as a fancy formal outfit is also great; go all out and have fun! (if you need inspiration for your Canadian bird of choice, check out https://ebird.org/region/CA for inspiration!)</li>
                     <li><strong>RSVP By:</strong> January 4th, 2026</li>
                 </ul>
 
