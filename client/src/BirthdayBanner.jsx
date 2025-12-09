@@ -92,16 +92,16 @@ const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
                 <ul id="eventDetails">
                     <li><strong>The Old Fart Turning 30: </strong> Mary Brantnall</li>
                     <li><strong>Date:</strong> January 10th, 2026</li>
-                    <li><strong>Time:</strong> 2:00 PM - 8:00 PM (The venue will be rented out between this time, but we will be going downtown for drinks afterwards as well!)</li>
+                    <li><strong>Time:</strong> 1:00 PM - 7:00 PM (The venue will be rented out between 12pm and 7:30pm, but we will be going downtown for drinks around 8:30pm afterwards as well!)</li>
                     <li><strong>Location:</strong> Local Council of Women Halifax, 989 Young Avenue, Halifax NS</li>
-                    <li><strong>Dress Code:</strong> Fancy Bird Attire (Anywhere from business casual to formal! Feel free to wear a full on costume with wings and a beak, or simply wear the colours of your chosen bird; go all out!)</li>
-                    <li><strong>RSVP By:</strong> December 15th, 2025</li>
+                    <li><strong>Dress Code:</strong> Fancy CANADIAN Bird Attire! Anywhere from business casual to formal! Wearing a full on costume with wings and a beak is encouraged, but simply wear the colours of your chosen bird as a fancy formal outfit is also great; go all out and have fun! (if you need inspiration for your Canadian bird of choice, check out https://ebird.org/region/CA for inspiration!)</li>
+                    <li><strong>RSVP By:</strong> January 4th, 2026</li>
                 </ul>
 
                 <div>What to Bring:
                     <ul>
                         <li>A potluck dish (See below for more details!)</li>
-                        <li>Your favourite drink to enjoy during the celebration! (This is a BYOB event, but I will have non-alcoholic refreshments available)</li>
+                        <li>Your favourite drink to enjoy during the celebration! (This is a BYOB event, but I will have non-alcoholic and a couple of alcoholic refreshments available)</li>
                         <li>Boardgames, video games (there will be a TV and projector!), anything you might think would be fun to bring along as an activity :)</li>
                     </ul>
                 </div>
