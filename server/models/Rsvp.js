@@ -9,7 +9,7 @@ const RsvpSchema = new mongoose.Schema({
     dietaryRestrictions: {type: String, maxlength: 200, trim: true, default: ''},
     comments: {type: String, maxlength: 400, trim: true, default: ''},
     isBringingSpecFood: {type: Boolean},
-    foodOption: {type: String},
+    foodOption: {type: String, default: 'Appetizer'},
 },
 { collection: 'party_rsvps', timestamps: true });
 
