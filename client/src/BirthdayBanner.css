@@ -36,8 +36,9 @@ h1 {
     margin-bottom: 30px;
 }
 
-image#flicker {
+#flicker {
     width: 80px;
+    max-width: 100px;
     height: auto;
 }
 
