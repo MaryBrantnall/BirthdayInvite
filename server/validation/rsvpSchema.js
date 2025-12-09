@@ -5,12 +5,12 @@ const rsvpSchema = Joi.object({
 
     name: Joi.string().trim().max(75).required(),
     email: Joi.string().trim().email().lowercase(),
-    attending: Joi.boolean().required(),
+    attending: Joi.boolean().optional(),
     plusOne: Joi.boolean().optional(),
     songChoice: Joi.string().trim().max(100).default('').optional(),
     dietaryRestrictions: Joi.string().trim().max(200).default('').optional(),
     comments: Joi.string().trim().max(400).default('').optional(),
-    isBringingSpecFood: Joi.boolean(),
+    isBringingSpecFood: Joi.boolean().optional(),
 
     foodOption: Joi.string().when('isBringingSpecFood', {
         is: true,
