@@ -83,7 +83,11 @@ const BirthdayBanner = ({ sharedValue, updateSharedValue }) => {
 
     return (
         <div className="birthday-banner">
+            <div className="banner-header">
+            <img id="flicker" src="northerFlicker.png" alt="birdy30-flicker" border="0"/>
             <h1>You're Invited to a Very Birdy Thirty Birthday Bash!</h1>
+            <img id="flicker" src="northerFlicker.png" alt="birdy30-flicker" border="0"/>
+            </div>
             <p id="greeting">Join us for a fancy bird themed soiree and Potluck! Bring your favourite potluck inspired foods like finger sandwichs, deviled eggs, potato salads and casseroles (if it looks like it belongs at a 90 year old's funeral, than it's perfect! If it's bird themed, bonus points!) </p>
 
             <h2>Event Details:</h2>
