@@ -7,9 +7,9 @@ const rsvpSchema = Joi.object({
     email: Joi.string().trim().email().lowercase(),
     attending: Joi.boolean().optional(),
     plusOne: Joi.boolean().optional(),
-    songChoice: Joi.string().trim().max(100).default('').optional(),
-    dietaryRestrictions: Joi.string().trim().max(200).default('').optional(),
-    comments: Joi.string().trim().max(400).default('').optional(),
+    songChoice: Joi.string().trim().max(100).default('').empty('').optional(),
+    dietaryRestrictions: Joi.string().trim().max(200).default('').empty('').optional(),
+    comments: Joi.string().trim().max(400).default('').empty('').optional(),
     isBringingSpecFood: Joi.boolean().optional(),
 
     foodOption: Joi.string().when('isBringingSpecFood', {
