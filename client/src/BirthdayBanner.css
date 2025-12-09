@@ -36,15 +36,16 @@ h1 {
     margin-bottom: 30px;
 }
 
-#flicker {
-    width: 80px;
-    max-width: 100px;
-    height: auto;
-}
-
 .banner-header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+
+#flicker {
+    
+    width: 80px;
+    max-width: 100px;
+    height: auto;
 }
