@@ -36,6 +36,11 @@ h1 {
     margin-bottom: 30px;
 }
 
+image#flicker {
+    width: 80px;
+    height: auto;
+}
+
 .banner-header {
     display: flex;
     align-items: center;
